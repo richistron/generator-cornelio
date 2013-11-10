@@ -3,11 +3,14 @@ node_js:
   - '0.8'
   - '0.10'
 before_install:
+  - 'npm install'
   - currentfolder=${PWD##*/}
   - if [ "$currentfolder" != 'generator-cornelio' ]; then cd .. && eval "mv $currentfolder generator-cornelio" && cd generator-cornelio; fi
+  - npm link
 script:
-  - 'npm install'
   - './node_modules/mocha/bin/mocha'
+  - yo cornelio
+  - ls
 notifications:
   email: true
 
