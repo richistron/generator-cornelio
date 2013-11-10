@@ -20,14 +20,17 @@ CornelioGenerator.prototype.askFor = function askFor() {
   var cb = this.async();
 
   // have Yeoman greet the user.
-  console.log(this.yeoman);
+  // console.log(this.yeoman);
 
-  var prompts = [{
-    type: 'confirm',
-    name: 'less',
-    message: 'Do you want to use less?',
-    default: true
-  }];
+  // sample promt
+  // {
+  //   type: 'confirm',
+  //   name: 'less',
+  //   message: 'Do you want to use less?',
+  //   default: true
+  // }
+
+  var prompts = [];
 
   this.prompt(prompts, function (props) {
     this.someOption = props.someOption;

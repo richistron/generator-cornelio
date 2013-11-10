@@ -1,6 +1,11 @@
 {
-  "name": "package",
+  "name": "my-awesome-app",
   "version": "0.0.0",
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "~3.0.1",
+    "requirejs": "~2.1.8",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2"
+  }
 }
 
