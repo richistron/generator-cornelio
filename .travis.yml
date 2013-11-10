@@ -7,10 +7,9 @@ before_install:
   - currentfolder=${PWD##*/}
   - if [ "$currentfolder" != 'generator-cornelio' ]; then cd .. && eval "mv $currentfolder generator-cornelio" && cd generator-cornelio; fi
   - npm link
+  - yo -v
 script:
   - './node_modules/mocha/bin/mocha'
-  - yo cornelio
-  - ls
 notifications:
   email: true
 
