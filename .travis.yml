@@ -9,6 +9,7 @@ before_install:
   - npm link
 script:
   - './node_modules/mocha/bin/mocha'
+  - 'cd ~/ && mkdir sample_app && cd sample_app && yo -v'
 notifications:
   email: true
 
