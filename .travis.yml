@@ -5,4 +5,8 @@ node_js:
 before_install:
   - currentfolder=${PWD##*/}
   - if [ "$currentfolder" != 'generator-cornelio' ]; then cd .. && eval "mv $currentfolder generator-cornelio" && cd generator-cornelio; fi
+script:
+  - 'npm install'
+notifications:
+  email: true
 

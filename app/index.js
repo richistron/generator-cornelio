@@ -24,8 +24,8 @@ CornelioGenerator.prototype.askFor = function askFor() {
 
   var prompts = [{
     type: 'confirm',
-    name: 'someOption',
-    message: 'Would you like to enable this option?',
+    name: 'less',
+    message: 'Do you want to use less?',
     default: true
   }];
 
