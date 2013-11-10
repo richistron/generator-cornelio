@@ -7,6 +7,7 @@ before_install:
   - if [ "$currentfolder" != 'generator-cornelio' ]; then cd .. && eval "mv $currentfolder generator-cornelio" && cd generator-cornelio; fi
 script:
   - 'npm install'
+  - './node_modules/mocha/bin/mocha'
 notifications:
   email: true
 
