@@ -4,8 +4,8 @@ node_js:
   - '0.10'
 before_install:
   - 'npm install -g yo'
-  - yo -v
-  - currentfolder=${PWD##*/}
+  - 'yo -v'
+  - 'currentfolder=${PWD##*/}'
   - if [ "$currentfolder" != 'generator-cornelio' ]; then cd .. && eval "mv $currentfolder generator-cornelio" && cd generator-cornelio; fi
 script:
   - './node_modules/mocha/bin/mocha'
