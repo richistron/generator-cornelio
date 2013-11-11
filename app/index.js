@@ -40,14 +40,52 @@ CornelioGenerator.prototype.askFor = function askFor() {
 };
 
 CornelioGenerator.prototype.app = function app() {
-  this.mkdir('app');
-  this.mkdir('app/templates');
 
+  // mkdir
+  console.log('creating dirs');
+  this.mkdir('src');
+  this.mkdir('src/img');
+  this.mkdir('src/js');
+  this.mkdir('src/css');
+  this.mkdir('src/templates');
+  this.mkdir('test');
+  this.mkdir('build');
+  this.mkdir('.tmp');
+
+
+  // copy
   this.copy('_package.json', 'package.json');
   this.copy('_bower.json', 'bower.json');
+  this.copy('bowerrc', '.bowerrc');
+  this.copy('gitignore', '.gitignore');
+  this.copy('travis.yml', '.travis.yml');
+
+  // templates
+  this.template('_Gruntfile.js','Gruntfile.js');
 };
 
 CornelioGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
+};
+
+CornelioGenerator.prototype.setApp = function(){
+  this.copy('test/index.html', 'test/index.html');
+  this.copy('test/lib/chai.js', 'test/lib/chai.js');
+  this.copy('test/lib/expect.js', 'test/lib/expect.js');
+  this.copy('test/lib/mocha/mocha.css', 'test/lib/mocha/mocha.css');
+  this.copy('test/lib/mocha/mocha.js', 'test/lib/mocha/mocha.js');
+  this.copy('test/spec/test.js', 'test/spec/test.js');
+};
+
+CornelioGenerator.prototype.setTest = function(){
+  this.copy('src/index.html', 'src/index.html');
+  this.copy('src/.htaccess', 'src/.htaccess');
+  this.copy('src/404.html', 'src/404.html');
+  this.copy('src/favicon.ico', 'src/favicon.ico');
+  this.copy('src/robots.txt', 'src/robots.txt');
+  this.copy('src/css/main.less', 'src/css/main.less');
+  this.copy('src/js/app.js', 'src/js/app.js');
+  this.copy('src/js/main.js', 'src/js/main.js');
+  this.copy('src/img/logo.png', 'src/img/logo.png');
 };

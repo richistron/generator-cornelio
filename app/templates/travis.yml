@@ -1,0 +1,10 @@
+node_js:
+    - '0.8'
+    - '0.10'
+before_script:
+  - 'npm install'
+  - 'bower install'
+script:
+  - 'grunt'
+notifications:
+  email: true
