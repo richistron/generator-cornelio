@@ -1,4 +1,9 @@
 require.config({
+  hbs:{
+    disableHelpers: true,
+    disableI18n: true,
+    templateExtension: 'html'
+  },
   paths: {
     jquery: '../components/jquery/jquery',
     bootstrapAffix: '../components/bootstrap/js/affix',
@@ -12,7 +17,13 @@ require.config({
     bootstrapScrollspy: '../components/bootstrap/js/scrollspy',
     bootstrapTab: '../components/bootstrap/js/tab',
     bootstrapTooltip: '../components/bootstrap/js/tooltip',
-    bootstrapTransition: '../components/bootstrap/js/transition'
+    bootstrapTransition: '../components/bootstrap/js/transition',
+    backbone: '../components/backbone-amd/backbone',
+    underscore: '../components/underscore-amd/underscore',
+    hbs: '../components/require-handlebars-plugin/hbs',
+    json2: '../components/require-handlebars-plugin/hbs/json2',
+    i18nprecompile: '../components/require-handlebars-plugin/hbs/i18nprecompile',
+    handlebars: '../components/require-handlebars-plugin/Handlebars'
   },
   shim: {
     bootstrapAffix: {
@@ -54,9 +65,4 @@ require.config({
   }
 });
 
-require(['app', 'jquery'], function (app, $) {
-  'use strict';
-  // use app here
-  console.log(app);
-  console.log('Running jQuery %s', $().jquery);
-});
+require(['app'], function(){});

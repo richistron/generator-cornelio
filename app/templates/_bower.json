@@ -5,7 +5,10 @@
     "bootstrap": "~3.0.1",
     "requirejs": "~2.1.8",
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "underscore-amd": "~1.5.2",
+    "backbone-amd": "~1.1.0",
+    "require-handlebars-plugin": "~0.4.0"
   }
 }
 

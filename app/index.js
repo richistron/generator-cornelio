@@ -88,4 +88,5 @@ CornelioGenerator.prototype.setTest = function(){
   this.copy('src/js/app.js', 'src/js/app.js');
   this.copy('src/js/main.js', 'src/js/main.js');
   this.copy('src/img/logo.png', 'src/img/logo.png');
+  this.copy('src/templates/allo.html','src/templates/allo.html');
 };
