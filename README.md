@@ -1,4 +1,4 @@
-# generator-cornelio v0.0.3 [![Build Status](https://travis-ci.org/richistron/generator-cornelio.png?branch=master)](https://travis-ci.org/richistron/generator-cornelio)
+# generator-cornelio v0.0.4 [![Build Status](https://travis-ci.org/richistron/generator-cornelio.png?branch=master)](https://travis-ci.org/richistron/generator-cornelio)
 
 A generator for [Yeoman](http://yeoman.io).
 
