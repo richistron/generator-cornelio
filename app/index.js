@@ -59,6 +59,7 @@ CornelioGenerator.prototype.app = function app() {
   this.copy('bowerrc', '.bowerrc');
   this.copy('gitignore', '.gitignore');
   this.copy('travis.yml', '.travis.yml');
+  this.copy('_README.md','README.md');
 
   // templates
   this.template('_Gruntfile.js','Gruntfile.js');

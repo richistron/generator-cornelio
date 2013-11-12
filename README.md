@@ -35,6 +35,39 @@ Finally, initiate the generator:
 $ yo cornelio
 ```
 
+### Usage
+
+```
+yo cornelio
+```
+
+## Included tasks
+
+Build
+```
+grunt build
+```
+
+tests
+```
+grunt tests
+```
+
+Dev Server
+```
+grunt devserver
+```
+
+Build Server
+```
+grunt buildserver
+```
+
+jshint
+```
+grunt jshint
+```
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
