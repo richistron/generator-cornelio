@@ -6,7 +6,7 @@ A generator for [Yeoman](http://yeoman.io).
 
 Cornelio's dependencies:
 
-* bootstrap
+* bootstrap less
 * requirejs
 * modernizr
 * jquery

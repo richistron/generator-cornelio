@@ -3,7 +3,16 @@
   "version": "0.0.4",
   "description": "A generator for Yeoman",
   "keywords": [
-    "yeoman-generator, cornelio, yeoman, generator, require-handlebars-plugin, backbone-amd, requirejs, bootstrap-less, modernizr, underscore-amd"
+    "yeoman-generator",
+    "cornelio",
+    "yeoman",
+    "generator",
+    "require-handlebars-plugin",
+    "backbone-amd",
+    "requirejs",
+    "bootstrap-less",
+    "modernizr",
+    "underscore-amd"
   ],
   "homepage": "https://github.com/richistron/generator-cornelio",
   "bugs": "https://github.com/richistron/generator-cornelio/issues",
