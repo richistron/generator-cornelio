@@ -21,9 +21,30 @@ describe('cornelio generator', function () {
 
   it('creates expected files', function (done) {
     var expected = [
-      // add files you expect to exist here.
+      'bower.json',
+      '.bowerrc',
+      '.gitignore',
+      '.travis.yml',
+      'README.md',
+      'Gruntfile.js',
+      '.editorconfig',
       '.jshintrc',
-      '.editorconfig'
+      'test/index.html',
+      'test/lib/chai.js',
+      'test/lib/expect.js',
+      'test/lib/mocha/mocha.css',
+      'test/lib/mocha/mocha.js',
+      'test/spec/test.js',
+      'src/index.html',
+      'src/.htaccess',
+      'src/404.html',
+      'src/favicon.ico',
+      'src/robots.txt',
+      'src/css/main.less',
+      'src/js/app.js',
+      'src/js/main.js',
+      'src/img/logo.png',
+      'src/templates/allo.html',
     ];
 
     helpers.mockPrompt(this.app, {
@@ -31,7 +52,7 @@ describe('cornelio generator', function () {
     });
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
-      helpers.assertFiles(expected);
+      helpers.assertFile(expected);
       done();
     });
   });
