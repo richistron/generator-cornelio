@@ -9,20 +9,31 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     jshint: {
-        all: [
-          'Gruntfile.js',
-          '!test/temp/',
-          'test/*.js'
-        ]
-      }
+      all: [
+        'Gruntfile.js',
+        '!test/temp/',
+        'test/*.js'
+      ]
+    },
+    mochaTest: {
+      options: {
+        mocha: require('mocha'),
+        reporter: 'spec'
+      },
+      src: [
+        'test/test-creation.js',
+        'test/test-load.js'
+      ]
+    },
   });
 
 
   grunt.registerTask('default', [
-    'jshint:all'
+    // 'jshint:all',
+    'mochaTest'
   ]);
 
   // tasks
-  // grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-mocha-test');
 
 };
