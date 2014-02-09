@@ -1,11 +1,11 @@
 /*global describe, beforeEach, it*/
-'use strict';
 
 var path    = require('path');
 var helpers = require('yeoman-generator').test;
 
 
 describe('cornelio generator', function () {
+  'use strict';
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
