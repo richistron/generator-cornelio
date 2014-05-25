@@ -13,7 +13,7 @@ module.exports = function (grunt) {
       build: 'build'
     },
     watch: {
-      compass: {
+      less: {
         files: ['<%%= yeoman.app %>/css/{,*/}*.{less,css}'],
         tasks: ['less', 'autoprefixer']
       },

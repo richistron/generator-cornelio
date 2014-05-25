@@ -5,7 +5,7 @@ require.config({
     templateExtension: 'html'
   },
   paths: {
-    jquery: '../components/jquery/jquery',
+    jquery: '../components/jquery/dist/jquery',
     bootstrapAffix: '../components/bootstrap/js/affix',
     bootstrapAlert: '../components/bootstrap/js/alert',
     bootstrapButton: '../components/bootstrap/js/button',

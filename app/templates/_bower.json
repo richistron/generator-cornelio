@@ -2,13 +2,12 @@
   "name": "my-awesome-app",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap": "~3.0.3",
-    "requirejs": "~2.1.10",
-    "modernizr": "~2.7.1",
-    "jquery": "~1.11.0",
+    "bootstrap": "~3.1.1",
+    "requirejs": "~2.1.11",
+    "modernizr": "~2.8.2",
+    "jquery": "~2.1.1",
     "underscore-amd": "~1.5.2",
     "backbone-amd": "~1.1.0",
-    "require-handlebars-plugin": "~0.4.0"
+    "require-handlebars-plugin": "~0.8.0"
   }
 }
-
