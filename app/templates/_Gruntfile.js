@@ -90,7 +90,7 @@ module.exports = function (grunt) {
         'test/spec/{,*/}*.js'
       ]
     },
-    mocha: {
+    mocha_phantomjs: {
       all: {
         options: {
           run: true,
@@ -309,7 +309,7 @@ module.exports = function (grunt) {
     'concurrent:test',
     'autoprefixer',
     'connect:test',
-    'mocha'
+    'mocha_phantomjs'
   ]);
 
   grunt.registerTask('build', [
@@ -359,6 +359,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-mocha');
+  grunt.loadNpmTasks('grunt-mocha-phantomjs');
   grunt.loadNpmTasks('grunt-modernizr');
   grunt.loadNpmTasks('grunt-svgmin');
   grunt.loadNpmTasks('grunt-concurrent');

@@ -77,6 +77,7 @@ CornelioGenerator.prototype.setApp = function(){
   this.copy('test/lib/mocha/mocha.css', 'test/lib/mocha/mocha.css');
   this.copy('test/lib/mocha/mocha.js', 'test/lib/mocha/mocha.js');
   this.copy('test/spec/test.js', 'test/spec/test.js');
+  this.copy('test/spec/main.js', 'test/spec/main.js');
 };
 
 CornelioGenerator.prototype.setTest = function(){
