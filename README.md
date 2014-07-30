@@ -1,4 +1,8 @@
-# generator-cornelio v0.0.9 [![Build Status](https://travis-ci.org/richistron/generator-cornelio.png?branch=master)](https://travis-ci.org/richistron/generator-cornelio)
+# generator-cornelio v0.0.9 
+
+[![npm version](http://img.shields.io/npm/v/generator-cornelio.svg)](https://www.npmjs.org/package/generator-cornelio)
+[![devDependency Status](https://david-dm.org/richistron/generator-cornelio/dev-status.svg)](https://david-dm.org/richistron/generator-cornelio#info=devDependencies)
+[![Build Status](https://api.travis-ci.org/richistron/generator-cornelio.svg?branch=master)](https://travis-ci.org/richistron/generator-cornelio)
 
 A generator for [Yeoman](http://yeoman.io). http://conrnelio.infraestructocho.com/#/
 
