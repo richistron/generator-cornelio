@@ -4,7 +4,7 @@
 [![devDependency Status](https://david-dm.org/richistron/generator-cornelio/dev-status.svg)](https://david-dm.org/richistron/generator-cornelio#info=devDependencies)
 [![Build Status](https://api.travis-ci.org/richistron/generator-cornelio.svg?branch=master)](https://travis-ci.org/richistron/generator-cornelio)
 
-A generator for [Yeoman](http://yeoman.io). http://conrnelio.infraestructocho.com/#/
+A generator for [Yeoman](http://yeoman.io). http://cornelio.infraestructocho.com
 
 ### What is different form others?
 
