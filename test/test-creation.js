@@ -19,7 +19,7 @@ describe('cornelio generator', function () {
     }.bind(this));
   });
 
-  it('creates expected files', function (done) {
+  it('creates expected files', function () {
     var expected = [
       'bower.json',
       '.bowerrc',
@@ -53,7 +53,6 @@ describe('cornelio generator', function () {
     this.app.options['skip-install'] = true;
     this.app.run({}, function () {
       helpers.assertFile(expected);
-      done();
     });
   });
 });
